@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    int units;
+    int rates;
+    scanf("%d",&units);
+    scanf("%d",&rates);
+    if(units>0&&rates>0){
+        printf("Bill amount value is %d",units*rates);
+    }
+    else{
+        printf("Not calculated");
+    }
+    return 0;
+    
+    
+}
