@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(){
+    
+    int type;
+    scanf("%d",&type);
+    printf("Enter the type:%d \n",type);
+    printf("Savings account \n");
+    printf("Current account\n");
+    int balance;
+    scanf("%d",&balance);
+    int withdrawlamount;
+    scanf("%d",&withdrawlamount);
+    switch(type){
+        case 1:
+        if(balance>=withdrawlamount){
+            printf("Transaction successful");
+        }
+        break;
+        case 2:
+        if(withdrawlamount==5000){
+            printf("Transaction successful");
+        }
+        else{
+            printf("Limit exceeded");
+        }
+        break;
+        
+    }
+    return 0;
+    
+}
